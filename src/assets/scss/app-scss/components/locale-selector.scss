@@ -1,0 +1,37 @@
+.locale-selector {
+  display: inline-flex;
+
+  .locale-radio-group {
+    display: inline-flex;
+    justify-content: center;
+    label{
+      &.locale-radio {
+        position: relative;
+        cursor: pointer;
+        display: block;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16);
+        box-sizing: border-box;
+        i{
+          height: 100%;
+          width: 100%;
+          background-size: cover;
+          background-position: 0 0;
+        }
+        &.selected {
+          border: solid 2px #42b983;
+        }
+        & + .locale-radio{
+          margin-left: 8px;
+        }
+      }
+    }
+
+    input {
+      display: none;
+    }
+  }
+}
